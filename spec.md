@@ -42,7 +42,7 @@ The user picks a new random blinding factor $\eta'$ and derives a fresh, anonymo
 **Request Generation**
 The user picks the next available Ticket Index $i$. The user generates a ZK-STARK $\pi_{req}$ proving:
 1. **Membership:** $ID \in$ MerkleRoot.
-2. **State Consistency:** The anonymous $E(R)_{anon}$ is a valid rerandomization of the commitment $E(R)$ previously signed by the server with $\sigma_{srv}$.
+2. **State Consistency:** The anonymous $E_{anon}(R)$ is a valid rerandomization of the commitment $E(R)$ previously signed by the server with $\sigma_{srv}$.
 3. **Solvency (The Credit Check):** 
 
 $$(i + 1) \cdot C_{max} \le D + R$$ 
